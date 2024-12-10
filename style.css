@@ -1,0 +1,361 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    color: #000;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #d4af37;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.hero {
+    padding: 4rem 0;
+    background: url('images/banner1.png') no-repeat center center / cover;
+    clip-path: ellipse(150% 100% at 50% 0%);
+    color: #000;
+}
+
+.hero .display-4 {
+    font-weight: bold;
+    color: #000;
+    font-size: 3rem;
+}
+
+.hero .lead {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+}
+
+.hero .btn {
+    background-color: #fff;
+    color: #000;
+    border-radius: 30px;
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+}
+
+.hero .btn:hover {
+    background-color: #f8f9fa;
+}
+
+.hero .hero-image {
+    max-width: 80%;
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Animation for Image */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.best-jewellery {
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.section-title .highlight {
+    color: #d4af37;
+    position: relative;
+}
+
+.section-title .highlight::before,
+.section-title .highlight::after {
+    content: "●";
+    color: #d4af37;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.section-description {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 2rem;
+}
+
+.ring-wrapper {
+    position: relative;
+    text-align: center;
+}
+
+.ring-wrapper:hover,
+.form-wrapper:hover,
+.client-border:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease;
+}
+
+.ring-border {
+    width: 250px;
+    height: 250px;
+    border: 10px solid #d4af37;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 1rem auto;
+    background-color: #000;
+}
+
+.ring-border img:hover,
+.client-image:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.ring-border img {
+    transition: transform 0.3s ease;
+}
+
+.client-border img {
+    transition: transform 0.3s ease;
+}
+
+.ring-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.ring-description {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+.btn-custom {
+    background-color: #000;
+    color: #fff;
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: 2px solid #d4af37;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+    background-color: #d4af37;
+    color: #000;
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.request-callback {
+    background-color: #fff;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.section-description {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 2rem;
+}
+
+.form-wrapper {
+    border: 2px solid #d4af37;
+    border-radius: 15px;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0.8rem;
+    font-size: 1rem;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #6c757d;
+}
+
+.btn-custom {
+    background-color: #000;
+    color: #fff;
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: 2px solid #d4af37;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+    background-color: #d4af37;
+    color: #000;
+}
+
+.img-fluid {
+    border-radius: 10px;
+}
+
+.our-clients {
+    background-color: #fff;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.section-description {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 2rem;
+}
+
+.client-image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.client-border {
+    width: 150px;
+    height: 150px;
+    border: 10px solid #d4af37;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+}
+
+.client-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.quote-symbol {
+    position: absolute;
+    bottom: -20px;
+    left: 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #d4af37;
+}
+
+.client-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d4af37;
+    margin-bottom: 1rem;
+}
+
+.testimonial-box {
+    background-color: #000;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.dots-navigation {
+    margin-top: 20px;
+}
+
+.dots-navigation .dot {
+    width: 12px;
+    height: 12px;
+    background-color: #d4af37;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.dots-navigation .dot.active {
+    background-color: #000;
+}
+
+/* Footer Main Section */
+.footer {
+    background-color: #f3c968;
+    color: #000;
+}
+
+.footer-text {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #fff;
+    margin: 0;
+}
+
+.footer-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.footer-call {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #000;
+}
+
+.footer-phone {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    background-color: #ffe082;
+    padding: 1rem;
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #000;
+    width: 100%;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1000;
+}
